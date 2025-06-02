@@ -30,7 +30,7 @@ app.get('/restaurantes/:id', async (req, res) => {
       }
 
       if (!row) {
-        return res.status(404).send({message:'Restaurante não encontrado'});
+        return res.status(404).send({message:'Restaurante encontrado encontrado'});
       }
       res.json(row);
     });
